@@ -89,6 +89,21 @@
       ]
     },
     {
+      "id": "reportaz-2017",
+      "data": "2017-04-23",
+      "tytul": "W podróż po radiowych falach — reportaż „Opowieść eteryczna”",
+      "zajawka": "Cezary Galek w rozmowie z SP3IBM, SP3SBQ i SP3DUG o krótkofalarstwie w Świebodzinie.",
+      "tresc": [
+        "W podróż po radiowych falach 23 kwietnia 2017 r. o godz. 9:00 zapraszają Cezary Galek wraz z Czesławem SP3IBM, Kazimierzem SP3SBQ i Zdzisławem SP3DUG.",
+        "Po reportażu uruchamiany jest telefon, na który można dzwonić z własnymi przemyśleniami."
+      ],
+      "autor": "73! Czesław SP3IBM",
+      "zdjecie": { "plik": "../kenwood-ts990.jpg", "opis": "Stanowisko klubowe SP3PLD" },
+      "linki": [
+        { "tekst": "Strona reportażu w Radiu Zachód (kopia w Web Archive)", "url": "https://web.archive.org/web/20170701120854/http://www.zachod.pl/bez-kategorii/premiera-opowiesc-eteryczna-reportaz-cezarego-galka/" }
+      ]
+    },
+    {
       "id": "lagow-2016",
       "data": "2016-05-01",
       "tytul": "Jajecznica 2016",
@@ -106,21 +121,7 @@
         { "tekst": "Film „XXI Spotkanie Krótkofalowców w Łagowie — 1 maja 2016” (YouTube, SP3CMX)", "url": "https://www.youtube.com/watch?v=Q4qn45XQlGQ" }
       ]
     },
-    {
-      "id": "reportaz-2017",
-      "data": "2017-04-23",
-      "tytul": "W podróż po radiowych falach — reportaż „Opowieść eteryczna”",
-      "zajawka": "Cezary Galek w rozmowie z SP3IBM, SP3SBQ i SP3DUG o krótkofalarstwie w Świebodzinie.",
-      "tresc": [
-        "W podróż po radiowych falach 23 kwietnia 2017 r. o godz. 9:00 zapraszają Cezary Galek wraz z Czesławem SP3IBM, Kazimierzem SP3SBQ i Zdzisławem SP3DUG.",
-        "Po reportażu uruchamiany jest telefon, na który można dzwonić z własnymi przemyśleniami."
-      ],
-      "autor": "73! Czesław SP3IBM",
-      "zdjecie": { "plik": "../kenwood-ts990.jpg", "opis": "Stanowisko klubowe SP3PLD" },
-      "linki": [
-        { "tekst": "Strona reportażu w Radiu Zachód (kopia w Web Archive)", "url": "https://web.archive.org/web/20170701120854/http://www.zachod.pl/bez-kategorii/premiera-opowiesc-eteryczna-reportaz-cezarego-galka/" }
-      ]
-    },
+    
     {
       "id": "przeprowadzka-2009",
       "data": "2009-01-02",
