@@ -1,0 +1,59 @@
+{
+  "stanNa": "2010-06-10",
+  "uwaga": "Zestawienie z 2010 roku — do aktualizacji przez klub.",
+
+  "honorRoll": {
+    "klasyfikacja": "MIXED",
+    "potwierdzone": 335,
+    "wszystkie": 341
+  },
+
+  "skala": {
+    "dxcc": 340,
+    "waz": 40
+  },
+
+  "dxcc": {
+    "emisje": [
+      { "nazwa": "CW", "worked": 300, "confirmed": 286 },
+      { "nazwa": "SSB", "worked": 308, "confirmed": 299 },
+      { "nazwa": "DIGI (RTTY + PSK)", "worked": 261, "confirmed": 242 },
+      { "nazwa": "MIXED", "worked": 325, "confirmed": 324 }
+    ],
+    "pasma": [
+      { "nazwa": "160 m", "worked": 63, "confirmed": 55 },
+      { "nazwa": "80 m", "worked": 168, "confirmed": 160 },
+      { "nazwa": "40 m", "worked": 235, "confirmed": 211 },
+      { "nazwa": "30 m", "worked": 206, "confirmed": 165 },
+      { "nazwa": "20 m", "worked": 298, "confirmed": 286 },
+      { "nazwa": "17 m", "worked": 260, "confirmed": 222 },
+      { "nazwa": "15 m", "worked": 285, "confirmed": 274 },
+      { "nazwa": "12 m", "worked": 188, "confirmed": 142 },
+      { "nazwa": "10 m", "worked": 244, "confirmed": 232 },
+      { "nazwa": "6 m", "worked": 48, "confirmed": 33 },
+      { "nazwa": "2 m", "worked": 7, "confirmed": 4 }
+    ]
+  },
+
+  "waz": {
+    "emisje": [
+      { "nazwa": "CW", "worked": 40, "confirmed": 40 },
+      { "nazwa": "SSB", "worked": 40, "confirmed": 40 },
+      { "nazwa": "DIGI (RTTY + PSK)", "worked": 39, "confirmed": 38 },
+      { "nazwa": "MIXED", "worked": 40, "confirmed": 40 }
+    ],
+    "pasma": [
+      { "nazwa": "160 m", "worked": 9, "confirmed": 8 },
+      { "nazwa": "80 m", "worked": 38, "confirmed": 38 },
+      { "nazwa": "40 m", "worked": 40, "confirmed": 39 },
+      { "nazwa": "30 m", "worked": 33, "confirmed": 30 },
+      { "nazwa": "20 m", "worked": 40, "confirmed": 40 },
+      { "nazwa": "17 m", "worked": 39, "confirmed": 35 },
+      { "nazwa": "15 m", "worked": 40, "confirmed": 40 },
+      { "nazwa": "12 m", "worked": 29, "confirmed": 26 },
+      { "nazwa": "10 m", "worked": 40, "confirmed": 40 },
+      { "nazwa": "6 m", "worked": 8, "confirmed": 4 },
+      { "nazwa": "2 m", "worked": null, "confirmed": null }
+    ]
+  }
+}

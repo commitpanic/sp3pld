@@ -1,0 +1,13 @@
+{
+  "czlonkowie": [
+    { "znak": "SP3IBM", "imie": "Czesław", "qth": "Świebodzin", "uwagi": "Prezes", "przyklad": false },
+    { "znak": "SP3DUG", "imie": "Zdzisław", "qth": "Świebodzin", "uwagi": "", "przyklad": false },
+    { "znak": "SP3E ex SP3CB", "imie": "Henryk", "qth": "Świebodzin", "uwagi": "", "przyklad": false }
+  ],
+  "silentKeys": [
+    { "znak": "SP3VV", "imie": "Piotr", "uwagi": "", "przyklad": false },
+    { "znak": "SP3BBZ", "imie": "Jan", "uwagi": "", "przyklad": false },
+    { "znak": "SP3NER", "imie": "Emil", "uwagi": "", "przyklad": false },
+    { "znak": "SP3SBQ", "imie": "Kazimierz", "uwagi": "", "przyklad": false }
+  ]
+}

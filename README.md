@@ -33,13 +33,36 @@ python -m http.server 8732
 
 W `aktualnosci.html` skopiuj blok `<article class="post" id="...">` i wklej na górze listy. Zdjęcia wrzuć do `assets/img/aktualnosci/`. Na stronie głównej (`index.html`, sekcja „Aktualności”) podmień jedną z trzech kart.
 
-## Jak dodać członka
+## Dane w plikach JSON
 
-W `czlonkowie.html` dodaj wiersz do tabeli i usuń wiersz przykładowy `SP3ABC`:
+Statystyki i lista członków są w katalogu `data/` — wystarczy edytować plik i wypchnąć zmiany, HTML zostaje bez zmian.
 
-```html
-<tr><td class="call">SP3XYZ</td><td>Imię</td><td>Świebodzin</td><td></td></tr>
+### `data/osiagniecia.json`
+
+- `stanNa` — data zestawienia (RRRR-MM-DD), wyświetlana nad tabelami,
+- `uwaga` — notka pod tabelami (pusty tekst = brak notki),
+- `honorRoll.potwierdzone` / `wszystkie` — licznik „DXCC Mixed” (strona główna i Osiągnięcia),
+- `skala.dxcc` / `skala.waz` — maksimum dla pasków (aktualna liczba podmiotów DXCC, 40 stref WAZ),
+- `dxcc.emisje`, `dxcc.pasma`, `waz.emisje`, `waz.pasma` — wiersze tabel: `{ "nazwa": "20 m", "worked": 298, "confirmed": 286 }`.
+  Brak danych: `null`. Wiersz `MIXED` jest wyróżniony i zasila licznik „Strefy WAZ”.
+
+### `data/czlonkowie.json`
+
+```json
+{
+  "czlonkowie": [
+    { "znak": "SP3XYZ", "imie": "Jan", "qth": "Świebodzin", "uwagi": "" }
+  ],
+  "silentKeys": [
+    { "znak": "SP3ABC", "imie": "Jan", "uwagi": "założyciel klubu" }
+  ]
+}
 ```
+
+Wpisy wyświetlają się w kolejności z pliku; przy Silent Keys dopisywane jest „sk”. Pusta tablica `silentKeys` ukrywa całą sekcję. Wpisy przykładowe (`"przyklad": true`) usuń po dodaniu prawdziwych. Publikujemy tylko znak, imię i miejscowość — za zgodą członka.
+
+> Po edycji sprawdź poprawność JSON-a (np. https://jsonlint.com) — jeden brakujący przecinek blokuje wczytanie danych.
+> Podgląd lokalny wymaga serwera (`python -m http.server`), bo przeglądarka nie wczyta JSON-a z `file://`.
 
 ## Publikacja
 
