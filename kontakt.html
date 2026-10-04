@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt — SP3PLD Świebodzin</title>
+  <meta name="description" content="Kontakt z klubem krótkofalowców SP3PLD. Świebodziński Dom Kultury, ul. Piłsudskiego 39/41, Świebodzin. Spotkania w piątki 18:00–20:00.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kontakt — SP3PLD Świebodzin">
+  <meta property="og:description" content="Kontakt z klubem krótkofalowców SP3PLD. Świebodziński Dom Kultury, ul. Piłsudskiego 39/41, Świebodzin. Spotkania w piątki 18:00–20:00.">
+  <meta property="og:image" content="assets/img/qsl-sp3pld-vintage.jpg">
+  <meta name="theme-color" content="#1f6b5c">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="kontakt">
+  <a class="skip" href="#main">Przejdź do treści</a>
+  <div id="header-placeholder"></div>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow">QRV</span>
+        <h1>Kontakt</h1>
+        <p>Najprościej — przyjdź w piątek albo zawołaj nas na 145.275 MHz.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap contact-grid">
+        <div>
+          <dl class="station">
+            <div><dt>Adres</dt><dd>Świebodziński Dom Kultury<br>ul. Piłsudskiego 39/41<br>66-200 Świebodzin</dd></div>
+            <div><dt>Spotkania</dt><dd>piątek 18:00–20:00</dd></div>
+            <div><dt>Radio</dt><dd>145.275 MHz FM</dd></div>
+            <div><dt>Znak</dt><dd>SP3PLD</dd></div>
+          </dl>
+          <div class="map-box">
+            <div>
+              <button type="button" class="btn" id="map-load">Pokaż mapę</button>
+              <p>Mapa Google zostanie wczytana dopiero po kliknięciu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Napisz do nas</h2>
+          <form class="form" id="contact-form" novalidate>
+            <label>Imię lub znak
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>E-mail
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>Wiadomość
+              <textarea name="message" rows="6" required></textarea>
+            </label>
+            <label class="hp" aria-hidden="true">Nie wypełniaj
+              <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </label>
+            <label class="consent">
+              <input type="checkbox" name="consent" required>
+              <span>Wyrażam zgodę na przetwarzanie moich danych w celu odpowiedzi na wiadomość. Więcej w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</span>
+            </label>
+            <div><button type="submit" class="btn">Wyślij wiadomość</button></div>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

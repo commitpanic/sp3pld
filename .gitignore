@@ -1,0 +1,9 @@
+# materiały źródłowe — nie publikować
+_zrodla/
+.claude/
+Thumbs.db
+.DS_Store
+
+# dokumenty robocze (brief, notatki) — nie publikować
+data.md
+CLAUDE.md

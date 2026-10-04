@@ -1,0 +1,23 @@
+# TODO — SP3PLD
+
+## Do ustalenia z klubem
+- [ ] Domena docelowa (sp3pld.e7.pl zostaje? nowa sp3pld.pl / .org.pl?) → `CNAME`, `sitemap.xml`, absolutne `og:image`
+- [ ] E-mail klubu (stara strona: prawdopodobnie sp3pld@wp.pl — potwierdzić) → stopka, kontakt
+- [ ] Administrator danych do polityki prywatności
+- [ ] Konto EmailJS → klucze w `assets/js/main.js` (`EMAILJS`)
+- [ ] Czy spotkania nadal w piątki 18:00–20:00
+- [ ] Lista członków (znak, imię, QTH — za zgodą) + Silent Keys
+- [ ] Rok wpisu na DXCC Honor Roll i aktualne statystyki DXCC/WAZ (obecne z 10.06.2010)
+- [ ] Rok szkolenia PEM (SP6IEQ)
+- [ ] Aktualny sprzęt i anteny (o-klubie.html)
+- [ ] Nowe aktualności po 2019 r.
+- [ ] Zdjęcia w lepszej rozdzielczości (obecne ~558 px ze starej strony)
+- [ ] Zgody na wizerunek — galeria „Ludzie” i „Spotkania”
+- [ ] Facebook / YouTube klubu?
+
+## Techniczne
+- [ ] Repozytorium GitHub + włączenie GitHub Pages
+- [ ] `sitemap.xml` po ustaleniu domeny
+- [ ] Przekierowania ze starych adresów (/osi-gni-cia, /sp3pld, /nasze-karty-qsl, /otrzymane-karty-qsl, /linkownia-pogoda, /jajecznica) — po przeniesieniu domeny
+- [ ] Lighthouse ≥ 90
+- [ ] Ewentualnie kompresja/WebP zdjęć galerii
