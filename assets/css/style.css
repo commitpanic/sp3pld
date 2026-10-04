@@ -185,6 +185,11 @@ h3 { font-size: 1.2rem; }
 .log { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .log li { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; display: flex; flex-direction: column; }
 .log img { aspect-ratio: 16/10; object-fit: cover; width: 100%; }
+.log-ph {
+  aspect-ratio: 16/10; display: grid; place-items: center; background: var(--band);
+  font: 800 clamp(2rem, 4vw, 2.8rem)/1 var(--font); letter-spacing: .04em;
+  color: transparent; -webkit-text-stroke: 2px var(--band-ink);
+}
 .log .body { padding: 16px 18px 20px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
 .log time, .post time { font: 600 .78rem/1 var(--mono); color: var(--stamp); letter-spacing: .06em; }
 .log h3 { font-size: 1.1rem; margin: 0; }
@@ -195,9 +200,11 @@ h3 { font-size: 1.2rem; }
 /* Aktualności — wpisy */
 .posts { display: grid; gap: 28px; }
 .post { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 28px; display: grid; grid-template-columns: 260px 1fr; gap: 28px; scroll-margin-top: 90px; }
-.post > img, .post > a > img { border-radius: 4px; width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.post > img, .post > a > img, .post-photo img { border-radius: 4px; width: 100%; aspect-ratio: 4/3; object-fit: cover; background: var(--paper-2); }
+.post.no-img { grid-template-columns: 1fr; }
 .post h2 { font-size: 1.45rem; margin: 6px 0 12px; }
-.post p { margin: 0 0 .8em; }
+.post p, .post ul { margin: 0 0 .8em; }
+.post ul { padding-left: 1.3em; }
 .post .by { font-family: var(--mono); font-size: .85rem; color: var(--ink-soft); }
 .post .thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 8px; margin-top: 14px; }
 .post .thumbs img { aspect-ratio: 1; object-fit: cover; border-radius: 3px; }

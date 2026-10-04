@@ -63,10 +63,18 @@
     });
   }));
 
-  // Lightbox — każdy kontener [data-lightbox] z linkami do zdjęć
-  const groups = document.querySelectorAll('[data-lightbox]');
-  if (groups.length) {
-    const lb = document.createElement('div');
+  // Lightbox — linki do zdjęć w kontenerach [data-lightbox], także dodanych później (np. z JSON)
+  let lb = null, lbImg, lbCount, items = [], idx = 0, opener = null;
+  const lbShow = () => {
+    const a = items[idx];
+    lbImg.src = a.href;
+    lbImg.alt = (a.querySelector('img') || {}).alt || '';
+    lbCount.textContent = (idx + 1) + ' / ' + items.length;
+  };
+  const lbClose = () => { lb.classList.remove('open'); lbImg.src = ''; if (opener) opener.focus(); };
+  const lbStep = d => { idx = (idx + d + items.length) % items.length; lbShow(); };
+  function lbCreate() {
+    lb = document.createElement('div');
     lb.className = 'lightbox';
     lb.setAttribute('role', 'dialog');
     lb.setAttribute('aria-modal', 'true');
@@ -75,38 +83,28 @@
       '<button class="lb-prev" aria-label="Poprzednie">‹</button><button class="lb-next" aria-label="Następne">›</button>' +
       '<div class="lb-count"></div>';
     document.body.appendChild(lb);
-    const img = lb.querySelector('img'), count = lb.querySelector('.lb-count');
-    let items = [], i = 0, opener = null;
-
-    const show = () => {
-      const a = items[i];
-      img.src = a.href;
-      img.alt = (a.querySelector('img') || {}).alt || '';
-      count.textContent = (i + 1) + ' / ' + items.length;
-    };
-    const close = () => { lb.classList.remove('open'); img.src = ''; if (opener) opener.focus(); };
-    const step = d => { i = (i + d + items.length) % items.length; show(); };
-
-    groups.forEach(g => g.addEventListener('click', e => {
-      const a = e.target.closest('a');
-      if (!a || !g.contains(a)) return;
-      e.preventDefault();
-      items = [...g.querySelectorAll('a')].filter(x => !x.hidden);
-      i = items.indexOf(a); opener = a;
-      show(); lb.classList.add('open');
-      lb.querySelector('.lb-close').focus();
-    }));
-    lb.querySelector('.lb-close').addEventListener('click', close);
-    lb.querySelector('.lb-prev').addEventListener('click', () => step(-1));
-    lb.querySelector('.lb-next').addEventListener('click', () => step(1));
-    lb.addEventListener('click', e => { if (e.target === lb) close(); });
-    document.addEventListener('keydown', e => {
-      if (!lb.classList.contains('open')) return;
-      if (e.key === 'Escape') close();
-      if (e.key === 'ArrowLeft') step(-1);
-      if (e.key === 'ArrowRight') step(1);
-    });
+    lbImg = lb.querySelector('img'); lbCount = lb.querySelector('.lb-count');
+    lb.querySelector('.lb-close').addEventListener('click', lbClose);
+    lb.querySelector('.lb-prev').addEventListener('click', () => lbStep(-1));
+    lb.querySelector('.lb-next').addEventListener('click', () => lbStep(1));
+    lb.addEventListener('click', e => { if (e.target === lb) lbClose(); });
   }
+  document.addEventListener('click', e => {
+    const a = e.target.closest('[data-lightbox] a');
+    if (!a || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    e.preventDefault();
+    if (!lb) lbCreate();
+    items = [...a.closest('[data-lightbox]').querySelectorAll('a')].filter(x => !x.hidden);
+    idx = items.indexOf(a); opener = a;
+    lbShow(); lb.classList.add('open');
+    lb.querySelector('.lb-close').focus();
+  });
+  document.addEventListener('keydown', e => {
+    if (!lb || !lb.classList.contains('open')) return;
+    if (e.key === 'Escape') lbClose();
+    if (e.key === 'ArrowLeft') lbStep(-1);
+    if (e.key === 'ArrowRight') lbStep(1);
+  });
 
   // Mapa Google ładowana dopiero po kliknięciu (bez ciasteczek przed zgodą)
   const mapBtn = document.getElementById('map-load');

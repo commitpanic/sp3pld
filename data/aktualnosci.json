@@ -1,0 +1,149 @@
+{
+  "wpisy": [
+    {
+      "id": "swieta-2018",
+      "data": "2018-12",
+      "dataTekst": "grudzień 2018",
+      "tytul": "Wesołych Świąt i szczęśliwego Nowego 2019 Roku",
+      "zajawka": "Zaproszenie na świąteczno-noworoczne spotkanie klubu 28 grudnia 2018 r. o godz. 18:00.",
+      "tresc": [
+        "Zaproszenie dla Koleżanek i Kolegów oraz sympatyków klubu SP3PLD.",
+        "W dniu **28 grudnia 2018 r. o godz. 18:00**, jak co roku, odbędzie się spotkanie świąteczno-noworoczne. Zapraszamy wszystkich chętnych."
+      ]
+    },
+    {
+      "id": "lagow-2018",
+      "data": "2018-05-01",
+      "tytul": "XXIII Spotkanie Radioamatorów i Krótkofalowców w Łagowie Lubuskim",
+      "zajawka": "Jajecznica Łagowska 2018: giełda, zawody strzeleckie i jajecznica z 360 jaj.",
+      "tresc": [
+        "W dniu 1 maja odbyła się impreza majowa „Jajecznica Łagowska 2018”. Rokrocznie odbywa się ona dzięki uprzejmości kolegi Błażeja i Ryszarda SP3HBF oraz Oddziału Lubuskiego OT 32 PZK. W tym roku w spotkaniu uczestniczył również Wójt Gminy Łagów Lubuski.",
+        "Pogoda nie zawiodła naszego zaufania i cieszyliśmy się prawie cały czas słońcem. Odbyły się giełda krótkofalarska, zawody w strzelaniu do tarczy i do innych obiektów, a osławiona jajecznica zawierała w tym roku 360 jaj, kilka kilogramów cebuli i mięsa.",
+        "Zabawa była przednia, zawarte nowe znajomości i odświeżone „stare” kontakty zaowocują w przyszłości nowymi projektami. Niestety czas mijał bardzo szybko, więc — do 24. spotkania za rok."
+      ],
+      "autor": "opracował SP3HMV",
+      "zdjecie": { "plik": "lagow-2018.jpg", "opis": "Jajecznica Łagowska 2018" }
+    },
+    {
+      "id": "sp3sbq-2018",
+      "data": "2018-04",
+      "dataTekst": "kwiecień 2018",
+      "tytul": "Odszedł do krainy DX-ów Kazimierz Gancewski SP3SBQ",
+      "zajawka": "Wieloletni dyrektor Świebodzińskiego Domu Kultury, w którym od powstania działa nasz klub.",
+      "tresc": [
+        "W świąteczny poniedziałek w godzinach porannych odszedł nasz bliski kolega Kazimierz SP3SBQ — wieloletni dyrektor Świebodzińskiego Domu Kultury, w którym od powstania działa nasz klub SP3PLD.",
+        "Zasłużony działacz kultury i animator wielu przedsięwzięć kulturalnych. Autor pięciu książek o Świebodzinie, jego mieszkańcach, zabytkach oraz najbliższej nam historii. Radny miejski i Honorowy Obywatel Gminy Świebodzin. Kolega, który zawsze aktywnie uczestniczył w działaniach klubu, wspierał nas i podsuwał ciekawe pomysły.",
+        "**Kaziu — będzie nam Ciebie brakowało.**",
+        "Pogrzeb odbędzie się 6 kwietnia 2018 r. (piątek) w Świebodzinie:",
+        ["Msza Święta o godz. 13:00 w kościele św. Michała,", "kondukt żałobny spod głównej bramy cmentarza ok. godz. 14:00."]
+      ],
+      "autor": "Członkowie klubu SP3PLD · opracował Czesław SP3IBM",
+      "zdjecie": { "plik": "sp3sbq.png", "opis": "Kazimierz Gancewski SP3SBQ" },
+      "wspomnienie": true
+    },
+    {
+      "id": "zaproszenie-lagow-2018",
+      "data": "2018",
+      "tytul": "Zaproszenie do Łagowa Lubuskiego",
+      "zajawka": "XXIII Spotkanie Krótkofalowców, miłośników Radia i Eteru w pierwszy majowy weekend.",
+      "tresc": [
+        "Jak co roku od 22 lat, w pierwszy majowy weekend zapraszamy do Łagowa Lubuskiego (ul. Kolonia 13) na XXIII Spotkanie Krótkofalowców, miłośników Radia i Eteru.",
+        "W programie:",
+        ["tradycyjnie DUŻA jajecznica z 500 jaj,", "zawody strzeleckie,", "zawody wędkarskie,", "giełda krótkofalarska,", "oraz inne atrakcje związane z naszym hobby."],
+        "Woda i WC na miejscu. Będzie bar z kaszanką, kiełbasą i napojami. Istnieje możliwość rozbicia namiotu lub postawienia przyczepy kempingowej.",
+        "Kontakt: Ryszard SP3HBF lub UKF FM 145.275 MHz.",
+        "Miejsce spotkania znajduje się na terenie Łagowskiego Parku Krajobrazowego, w pobliżu jest „Pawski Ług” — z tego miejsca nikt jeszcze nie pracował na zaliczenie parków."
+      ],
+      "autor": "Serdecznie zapraszamy — Ryszard SP3HBF wraz z klubem SP3PLD",
+      "zdjecie": { "plik": "zaproszenie-lagow.jpg", "opis": "Spotkanie krótkofalowców w Łagowie" }
+    },
+    {
+      "id": "wigilia-2017",
+      "data": "2017-12-29",
+      "tytul": "Spotkanie wigilijno-noworoczne w SP3PLD",
+      "zajawka": "Podsumowanie roku i nowy transceiver Kenwood TS-990S przekazany klubowi przez Urząd Miasta.",
+      "tresc": [
+        "Wzorem lat ubiegłych 29 grudnia członkowie klubu spotkali się na corocznym spotkaniu podsumowującym działalność klubu w minionym roku. Na spotkanie został zaproszony prezes OT 32 kolega Marek SP3AMO oraz Pan Kazimierz Gancewski — radny miejski, członek komisji kultury.",
+        "Na spotkaniu omówiono osiągnięcia klubu w minionym roku oraz plany, które zamierzamy zrealizować w 2018 r. Kolega Marek SP3AMO przedstawił bieżącą sytuację w oddziale; omówiliśmy też działania, które będziemy wspólnie realizować (między innymi coroczne spotkanie w Łagowie).",
+        "Członkowie mogli się również zapoznać z nowym TRX **Kenwood TS-990S**, który został zakupiony ze środków Urzędu Miasta i przekazany na potrzeby naszego klubu w uznaniu naszych osiągnięć sportowych oraz wieloletniej działalności klubu."
+      ],
+      "autor": "opracował Czesław SP3IBM",
+      "zdjecie": { "plik": "wigilia-2017-2.jpg", "opis": "Spotkanie wigilijno-noworoczne w klubie" },
+      "galeria": ["wigilia-2017-1.jpg", "wigilia-2017-3.jpg", "wigilia-2017-4.jpg", "wigilia-2017-6.jpg"]
+    },
+    {
+      "id": "honor-roll",
+      "dataTekst": "z archiwum",
+      "tytul": "DXCC Honor Roll dla SP3PLD",
+      "zajawka": "Pierwsza i jedyna polska stacja klubowa w wykazie DXCC Honor Roll MIXED.",
+      "tresc": [
+        "Miło mi jest przekazać wszystkim Koleżankom i Kolegom, którzy identyfikują się z naszym Klubem, że nasz Klub jako pierwszy i zarazem jedyny spośród stacji klubowych w Polsce został umieszczony w wykazie **DXCC Honor Roll MIXED** (ze stanem 335/341).",
+        "To szczególne wyróżnienie przyznane przez amerykańską ARRL świadczy o naszym kunszcie operatorskim, efektywnej wieloletniej pracy w eterze oraz dobrej koleżeńskiej atmosferze w klubie. Pragnę podziękować wszystkim Kolegom za mozolną pracę operatorską, która zaowocowała takimi wynikami.",
+        "Szczególne podziękowania Kolegom, którzy wsparli finansowo finał akcji — złożyli się na opłatę za zgłoszenie i weryfikację kart QSL. Liczę również na kolejne wsparcie finansowe przy opłacie za przysługującą naszemu Klubowi tzw. „deskę Honor Roll MIXED”, jak również kolejnych dyplomów z programu DXCC.",
+        "Pozdrawiam i życzę dużo DX-ów."
+      ],
+      "autor": "Vy 73, Czesław SP3IBM",
+      "zdjecie": { "plik": "../dxcc-honor-roll.jpg", "opis": "Tabliczka DXCC Honor Roll SP3PLD" },
+      "linki": [
+        { "tekst": "Statystyki DXCC i WAZ klubu", "url": "osiagniecia.html" }
+      ]
+    },
+    {
+      "id": "lagow-2016",
+      "data": "2016-05-01",
+      "tytul": "Jajecznica 2016",
+      "zajawka": "XXI Spotkanie Krótkofalowców w Łagowie Lubuskim — ponad 150 uczestników z Polski, Anglii i Niemiec.",
+      "tresc": [
+        "1 maja odbyło się kolejne XXI Spotkanie Krótkofalowców w Łagowie Lubuskim, na które przybyło wielu krótkofalowców z okręgów SP1, SP2, SP3, SP5, SP6 i SP9 oraz z Anglii i Niemiec wraz z rodzinami. Zorganizowana była mini giełda sprzętu elektronicznego, pokazy łączności różnymi technikami, w tym łączności na demobilowym sprzęcie militarnym, oraz zawody strzeleckie.",
+        "Spotkania odbywają się co roku nad Jeziorem Trześniowskim na terenie Łagowskiego Parku Krajobrazowego SPFF-0059, atrakcyjnym dla „zbieraczy” parków. Na miejscu spotkań powstaje baza wypadowa dla krótkofalowców chcących spędzić wolny czas nad malowniczym Jeziorem Trześniowskim. Obecnie do dyspozycji są anteny W3DZZ, Inverted Vee na pasma 40 m, 20 m, 15 m, 10 m i GP na 2 m i 70 cm.",
+        "Na tegoroczne spotkanie przybyło ponad 150 osób, na które czekał poczęstunek w postaci smażonej ryby, złowionej w niżej położonym jeziorze, i tradycyjna jajecznica z 300 jaj, która cieszyła się tak dużym wzięciem, że nie dla wszystkich starczyło. Odbyło się też wiele dyskusji na tematy związane z krótkofalarstwem. Wieczorem XXI spotkanie dobiegło końca.",
+        "Organizatorzy — Ryszard SP3HBF wraz z gospodarzem terenu Błażejem oraz Zarząd OT 32 w Zielonej Górze — serdecznie dziękują wszystkim za udział w spotkaniu, a kolegom SP3CMX, SP3CAI, SP3CCR, SP3JP oraz SP3NYU za realizację filmu i udostępnienie zdjęć ze spotkania.",
+        "Specjalne podziękowania dla Rysia SP3HBF za udostępnienie letniego QTH i Marka SP3AMO za dostarczenie prowiantu — niech wam propagacja sprzyja. ZAPRASZAMY ZA ROK!"
+      ],
+      "autor": "Ryszard SP3HBF · fot. Janek SP3NYU",
+      "zdjecie": { "plik": "lagow-2016.jpg", "opis": "Lista uczestników XXI Spotkania Krótkofalowców w Łagowie 2016" },
+      "linki": [
+        { "tekst": "Film „XXI Spotkanie Krótkofalowców w Łagowie — 1 maja 2016” (YouTube, SP3CMX)", "url": "https://www.youtube.com/watch?v=Q4qn45XQlGQ" }
+      ]
+    },
+    {
+      "id": "reportaz-2017",
+      "data": "2017-04-23",
+      "tytul": "W podróż po radiowych falach — reportaż „Opowieść eteryczna”",
+      "zajawka": "Cezary Galek w rozmowie z SP3IBM, SP3SBQ i SP3DUG o krótkofalarstwie w Świebodzinie.",
+      "tresc": [
+        "W podróż po radiowych falach 23 kwietnia 2017 r. o godz. 9:00 zapraszają Cezary Galek wraz z Czesławem SP3IBM, Kazimierzem SP3SBQ i Zdzisławem SP3DUG.",
+        "Po reportażu uruchamiany jest telefon, na który można dzwonić z własnymi przemyśleniami."
+      ],
+      "autor": "73! Czesław SP3IBM",
+      "zdjecie": { "plik": "../kenwood-ts990.jpg", "opis": "Stanowisko klubowe SP3PLD" },
+      "linki": [
+        { "tekst": "Strona reportażu w Radiu Zachód (kopia w Web Archive)", "url": "https://web.archive.org/web/20170701120854/http://www.zachod.pl/bez-kategorii/premiera-opowiesc-eteryczna-reportaz-cezarego-galka/" }
+      ]
+    },
+    {
+      "id": "przeprowadzka-2009",
+      "data": "2009-01-02",
+      "tytul": "Nowy rok 2009 — nowe pomieszczenia klubu",
+      "zajawka": "Po 27 latach na poddaszu domu kultury przenieśliśmy się do dwóch nowych pomieszczeń piętro niżej.",
+      "tresc": [
+        "Nowy rok 2009 przyniósł niezwykle istotne dla nas zmiany. Po 27 latach zajmowania pomieszczeń na poddaszu domu kultury przenieśliśmy się do dwóch nowych pomieszczeń piętro niżej.",
+        "2 stycznia 2009 r. miało miejsce powitanie nowego roku już w nowych pomieszczeniach klubowych. Jak to wyglądało w obiektywie Stanisława SP3SUY — zobaczcie sami."
+      ],
+      "zdjecie": { "plik": "2009-1.jpg", "opis": "Członkowie klubu w nowych pomieszczeniach" },
+      "galeria": ["2009-2.jpg", "2009-3.jpg", "2009-4.jpg", "2009-5.jpg", "2009-6.jpg", "2009-7.jpg", "2009-8.jpg", "2009-9.jpg", "2009-10.jpg"]
+    },
+    {
+      "id": "szkolenie-pem",
+      "dataTekst": "z archiwum",
+      "tytul": "Ponownie spotykamy się w Świebodzinie — szkolenie PEM",
+      "zajawka": "Szkolenie z obliczania PEM i wymogów dla amatorskich systemów antenowych poprowadził Dionizy SP6IEQ.",
+      "tresc": [
+        "Dzięki naszej inicjatywie oraz pomocy zarządu OT 6 marca odbyło się szkolenie poświęcone tematyce obliczania PEM i wymogów, jakie powinny spełniać amatorskie systemy antenowe.",
+        "Szkolenie w całości przeprowadził Dionizy SP6IEQ. W szkoleniu uczestniczyło ok. 40 członków naszego oddziału. Odwiedzili nas również koledzy z Nowego Tomyśla."
+      ],
+      "zdjecie": { "plik": "szkolenie-pem-5.jpg", "opis": "Szkolenie PEM w Świebodzinie" },
+      "galeria": ["szkolenie-pem-6.jpg", "szkolenie-pem-7.jpg", "szkolenie-pem-8.jpg", "szkolenie-pem-9.jpg", "szkolenie-pem-10.jpg"]
+    }
+  ]
+}

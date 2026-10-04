@@ -29,13 +29,49 @@ assets/img/              zdjęcia (archiwum starej strony), logotypy PZK / ŚDK 
 python -m http.server 8732
 ```
 
-## Jak dodać aktualność
-
-W `aktualnosci.html` skopiuj blok `<article class="post" id="...">` i wklej na górze listy. Zdjęcia wrzuć do `assets/img/aktualnosci/`. Na stronie głównej (`index.html`, sekcja „Aktualności”) podmień jedną z trzech kart.
-
 ## Dane w plikach JSON
 
-Statystyki i lista członków są w katalogu `data/` — wystarczy edytować plik i wypchnąć zmiany, HTML zostaje bez zmian.
+Aktualności, statystyki i lista członków są w katalogu `data/` — wystarczy edytować plik i wypchnąć zmiany, HTML zostaje bez zmian.
+
+### `data/aktualnosci.json` — aktualności
+
+Wpisy wyświetlają się w kolejności z pliku — **nowy wpis dodaj na górze** listy `wpisy`. Trzy pierwsze trafiają też na stronę główną.
+
+```json
+{
+  "id": "spotkanie-2026",
+  "data": "2026-10-09",
+  "tytul": "Spotkanie klubowe",
+  "zajawka": "Krótki opis na kartę na stronie głównej.",
+  "tresc": [
+    "Pierwszy akapit. Znaki jak SP3IBM formatują się same.",
+    "Drugi akapit z **pogrubieniem**."
+  ],
+  "autor": "opracował Czesław SP3IBM",
+  "zdjecie": { "plik": "2026-spotkanie/1.jpg", "opis": "Członkowie klubu przy stacji" },
+  "galeria": ["2026-spotkanie/2.jpg", "2026-spotkanie/3.jpg"],
+  "linki": [
+    { "tekst": "Relacja na stronie OT 32", "url": "https://ot32.pzk.org.pl/" }
+  ]
+}
+```
+
+| Pole | Wymagane | Opis |
+|---|---|---|
+| `id` | zalecane | krótki identyfikator bez spacji i polskich znaków — adres wpisu to `aktualnosci.html#id` |
+| `data` | nie | `RRRR-MM-DD` lub `RRRR-MM`; wyświetla się jako 09.10.2026 |
+| `dataTekst` | nie | dowolny tekst zamiast daty, np. „z archiwum” |
+| `tytul` | tak | tytuł wpisu |
+| `zajawka` | nie | tekst karty na stronie głównej (domyślnie pierwszy akapit) |
+| `tresc` | tak | lista akapitów; `**tekst**` = pogrubienie; lista punktowana = tablica w tablicy: `["punkt 1", "punkt 2"]` |
+| `autor` | nie | podpis pod wpisem |
+| `zdjecie` | nie | zdjęcie główne (`plik` + `opis` dla niewidomych); bez zdjęcia wpis jest na całą szerokość, a karta na stronie głównej dostaje zielony pas z napisem SP3PLD |
+| `galeria` | nie | dodatkowe zdjęcia — miniatury z podglądem po kliknięciu |
+| `linki` | nie | linki pod treścią: artykuł, film, relacja, strona |
+| `wspomnienie` | nie | `true` — wpis wspomnieniowy (ciemny pasek z boku) |
+| `ukryty` | nie | `true` — wpis nie wyświetla się (szkic) |
+
+**Zdjęcia:** wrzuć pliki do `assets/img/aktualnosci/` — najlepiej w podfolderze wpisu, np. `assets/img/aktualnosci/2026-spotkanie/1.jpg` — i w JSON-ie podaj ścieżkę od tego folderu (`"2026-spotkanie/1.jpg"`). Można też podać pełny adres `https://...`. Zalecany rozmiar: ok. 1600 px dłuższy bok, JPG, do ~400 KB.
 
 ### `data/osiagniecia.json`
 
