@@ -67,7 +67,7 @@
           <h4>Współpraca</h4>
           <ul>
             <li><a href="https://pzk.org.pl" rel="noopener">Polski Związek Krótkofalowców</a></li>
-            <li><a href="http://www.otpzk32.vgh.pl/" rel="noopener">OT 32 PZK Zielona Góra</a></li>
+            <li><a href="https://ot32.pzk.org.pl/" rel="noopener">OT 32 PZK Zielona Góra</a></li>
             <li><a href="https://sdk.swiebodzin.pl/" rel="noopener">Świebodziński Dom Kultury</a></li>
             <li><a href="https://www.swiebodzin.eu/" rel="noopener">Gmina Świebodzin</a></li>
           </ul>
