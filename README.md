@@ -65,7 +65,7 @@ Wpisy wyświetlają się w kolejności z pliku — **nowy wpis dodaj na górze**
 | `zajawka` | nie | tekst karty na stronie głównej (domyślnie pierwszy akapit) |
 | `tresc` | tak | lista akapitów; `**tekst**` = pogrubienie; lista punktowana = tablica w tablicy: `["punkt 1", "punkt 2"]` |
 | `autor` | nie | podpis pod wpisem |
-| `zdjecie` | nie | zdjęcie główne (`plik` + `opis` dla niewidomych); bez zdjęcia wpis jest na całą szerokość, a karta na stronie głównej dostaje zielony pas z napisem SP3PLD |
+| `zdjecie` | nie | zdjęcie główne (`plik` + `opis` dla niewidomych); bez zdjęcia w jego miejscu wyświetla się zielony pas z napisem SP3PLD (na liście wpisów i na stronie głównej) |
 | `galeria` | nie | dodatkowe zdjęcia — miniatury z podglądem po kliknięciu |
 | `linki` | nie | linki pod treścią: artykuł, film, relacja, strona |
 | `wspomnienie` | nie | `true` — wpis wspomnieniowy (ciemny pasek z boku) |

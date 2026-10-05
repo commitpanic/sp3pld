@@ -201,7 +201,7 @@ h3 { font-size: 1.2rem; }
 .posts { display: grid; gap: 28px; }
 .post { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 28px; display: grid; grid-template-columns: 260px 1fr; gap: 28px; scroll-margin-top: 90px; }
 .post > img, .post > a > img, .post-photo img { border-radius: 4px; width: 100%; aspect-ratio: 4/3; object-fit: cover; background: var(--paper-2); }
-.post.no-img { grid-template-columns: 1fr; }
+.post > .log-ph { aspect-ratio: 4/3; border-radius: 4px; font-size: clamp(2rem, 5vw, 2.6rem); }
 .post h2 { font-size: 1.45rem; margin: 6px 0 12px; }
 .post p, .post ul { margin: 0 0 .8em; }
 .post ul { padding-left: 1.3em; }

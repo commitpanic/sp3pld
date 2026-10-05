@@ -10,6 +10,9 @@
   const src = p => /^(https?:)?\/\//.test(p) || p.startsWith('assets/') ? p : IMG_DIR + p;
   const isExternal = u => /^(https?:)?\/\//.test(u);
 
+  // zastępcza grafika dla wpisu bez zdjęcia — zielony pas z napisem SP3PLD
+  const PLACEHOLDER = '<div class="log-ph" aria-hidden="true">SP3PLD</div>';
+
   // tekst → HTML: escape, **pogrubienie**, znaki wywoławcze SP/SQ/SO/SN/SR/3Z/HF
   const rich = t => esc(t)
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
@@ -46,8 +49,8 @@
       `<p><a href="${esc(l.url)}"${isExternal(l.url) ? ' target="_blank" rel="noopener"' : ''}>${esc(l.tekst || l.url)} →</a></p>`).join('');
     const main = w.zdjecie
       ? `<div class="post-photo" data-lightbox><a href="${esc(src(w.zdjecie.plik || w.zdjecie))}">${photo(w.zdjecie)}</a></div>`
-      : '';
-    const cls = ['post', w.wspomnienie && 'memoriam', !w.zdjecie && 'no-img'].filter(Boolean).join(' ');
+      : PLACEHOLDER;
+    const cls = ['post', w.wspomnienie && 'memoriam'].filter(Boolean).join(' ');
     return `<article class="${cls}"${w.id ? ` id="${esc(w.id)}"` : ''}>
       ${main}
       <div>
@@ -65,7 +68,7 @@
     const lead = w.zajawka || (w.tresc || []).find(p => typeof p === 'string') || '';
     const href = 'aktualnosci.html' + (w.id ? '#' + encodeURIComponent(w.id) : '');
     return `<li>
-      ${w.zdjecie ? photo(w.zdjecie) : '<div class="log-ph" aria-hidden="true">SP3PLD</div>'}
+      ${w.zdjecie ? photo(w.zdjecie) : PLACEHOLDER}
       <div class="body">
         ${dateHtml(w)}
         <h3>${esc(w.tytul)}</h3>
