@@ -43,7 +43,7 @@
       return `<a href="${esc(src(o.plik))}"><img src="${esc(src(o.plik))}" alt="${esc(alt)}" loading="lazy"></a>`;
     }).join('');
     const links = (w.linki || []).map(l =>
-      `<p><a href="${esc(l.url)}"${isExternal(l.url) ? ' rel="noopener"' : ''}>${esc(l.tekst || l.url)} →</a></p>`).join('');
+      `<p><a href="${esc(l.url)}"${isExternal(l.url) ? ' target="_blank" rel="noopener"' : ''}>${esc(l.tekst || l.url)} →</a></p>`).join('');
     const main = w.zdjecie
       ? `<div class="post-photo" data-lightbox><a href="${esc(src(w.zdjecie.plik || w.zdjecie))}">${photo(w.zdjecie)}</a></div>`
       : '';

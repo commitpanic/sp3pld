@@ -52,9 +52,9 @@
           <span class="footer-call">SP3PLD</span>
           <p>Klub Krótkofalowców Polskiego Związku Krótkofalowców przy Świebodzińskim Domu Kultury. Działamy od 1981 r. w Oddziale Terenowym nr 32 PZK.</p>
           <div class="footer-logos">
-            <a href="https://pzk.org.pl" rel="noopener" title="Polski Związek Krótkofalowców"><img src="assets/img/logo/pzk.png" alt="Polski Związek Krótkofalowców" width="56" height="56" loading="lazy"></a>
-            <a href="https://sdk.swiebodzin.pl/" rel="noopener" title="Świebodziński Dom Kultury"><img src="assets/img/logo/sdk.png" alt="Świebodziński Dom Kultury" width="75" height="56" loading="lazy"></a>
-            <a href="https://www.swiebodzin.eu/" rel="noopener" title="Gmina Świebodzin"><img src="assets/img/logo/herb-swiebodzin.png" alt="Herb Gminy Świebodzin" width="46" height="56" loading="lazy"></a>
+            <a href="https://pzk.org.pl" title="Polski Związek Krótkofalowców" target="_blank" rel="noopener"><img src="assets/img/logo/pzk.png" alt="Polski Związek Krótkofalowców" width="56" height="56" loading="lazy"></a>
+            <a href="https://sdk.swiebodzin.pl/" title="Świebodziński Dom Kultury" target="_blank" rel="noopener"><img src="assets/img/logo/sdk.png" alt="Świebodziński Dom Kultury" width="75" height="56" loading="lazy"></a>
+            <a href="https://www.swiebodzin.eu/" title="Gmina Świebodzin" target="_blank" rel="noopener"><img src="assets/img/logo/herb-swiebodzin.png" alt="Herb Gminy Świebodzin" width="46" height="56" loading="lazy"></a>
           </div>
         </div>
         <div>
@@ -66,10 +66,10 @@
         <div>
           <h4>Współpraca</h4>
           <ul>
-            <li><a href="https://pzk.org.pl" rel="noopener">Polski Związek Krótkofalowców</a></li>
-            <li><a href="https://ot32.pzk.org.pl/" rel="noopener">OT 32 PZK Zielona Góra</a></li>
-            <li><a href="https://sdk.swiebodzin.pl/" rel="noopener">Świebodziński Dom Kultury</a></li>
-            <li><a href="https://www.swiebodzin.eu/" rel="noopener">Gmina Świebodzin</a></li>
+            <li><a href="https://pzk.org.pl" target="_blank" rel="noopener">Polski Związek Krótkofalowców</a></li>
+            <li><a href="https://ot32.pzk.org.pl/" target="_blank" rel="noopener">OT 32 PZK Zielona Góra</a></li>
+            <li><a href="https://sdk.swiebodzin.pl/" target="_blank" rel="noopener">Świebodziński Dom Kultury</a></li>
+            <li><a href="https://www.swiebodzin.eu/" target="_blank" rel="noopener">Gmina Świebodzin</a></li>
           </ul>
         </div>
         <div>
@@ -85,7 +85,7 @@
       <div class="footer-bottom">
         <span>© ${year} Klub Krótkofalowców SP3PLD · <a href="polityka-prywatnosci.html">Polityka prywatności</a></span>
         <span class="vy73">VY 73!</span>
-        <span>Created by <a href="https://kubabuba.pl" rel="noopener">kubabuba.pl</a></span>
+        <span>Created by <a href="https://kubabuba.pl" target="_blank" rel="noopener">kubabuba.pl</a></span>
       </div>
     </div>
   </footer>`;
