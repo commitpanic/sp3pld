@@ -1,13 +1,32 @@
 {
   "czlonkowie": [
-    { "znak": "SP3IBM", "imie": "Czesław", "qth": "Świebodzin", "uwagi": "Prezes", "przyklad": false },
-    { "znak": "SP3DUG", "imie": "Zdzisław", "qth": "Świebodzin", "uwagi": "", "przyklad": false },
-    { "znak": "SP3E ex SP3CB", "imie": "Henryk", "qth": "Świebodzin", "uwagi": "", "przyklad": false }
+    {"znak": "SP3E ex SP3CB", "imie": "Henryk", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SP3V ex SP3NYS", "imie": "Grzegorz", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SP3DUG", "imie": "Zdzisław", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SP3FAR", "imie": "Przemysław", "qth": "Zielona Góra", "uwagi": "", "przyklad": false},
+    {"znak": "SP3HBF", "imie": "Ryszard", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SP3HZG", "imie": "Piotr", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SP3IBM", "imie": "Czesław", "qth": "Świebodzin", "uwagi": "Prezes", "przyklad": false},
+    {"znak": "SP3IDN", "imie": "Piotr", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SP3LFU", "imie": "Zbigniew", "qth": "Myszęcin", "uwagi": "", "przyklad": false},
+    {"znak": "SP3OSB", "imie": "Piotr", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SP3RBG", "imie": "Andrzej", "qth": "Borów", "uwagi": "", "przyklad": false},
+    {"znak": "SP3RBH", "imie": "Małgosia", "qth": "Borów", "uwagi": "", "przyklad": false},
+    {"znak": "SP3SBB", "imie": "Bogusław", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SP3SUY", "imie": "Stanisław", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SP3WVB", "imie": "Anatol", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SP3SW ex SQ3HMK", "imie": "Tadeusz", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SP3HMT ex SQ3HMT", "imie": "Agnieszka", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SP3HMV ex SQ3HMV", "imie": "Paweł", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SQ3HLI", "imie": "Ryszard", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SQ3HLW", "imie": "Wiesław", "qth": "Myszęcin", "uwagi": "", "przyklad": false},
+    {"znak": "SQ3VAE", "imie": "Ewa", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SQ3VAR", "imie": "Andrzej", "qth": "Świebodzin", "uwagi": "", "przyklad": false}
   ],
   "silentKeys": [
-    { "znak": "SP3VV", "imie": "Piotr", "uwagi": "", "przyklad": false },
-    { "znak": "SP3BBZ", "imie": "Jan", "uwagi": "", "przyklad": false },
-    { "znak": "SP3NER", "imie": "Emil", "uwagi": "", "przyklad": false },
-    { "znak": "SP3SBQ", "imie": "Kazimierz", "uwagi": "", "przyklad": false }
+    {"znak": "SP3VV", "imie": "Piotr", "uwagi": "", "przyklad": false},
+    {"znak": "SP3BBZ", "imie": "Jan", "uwagi": "", "przyklad": false},
+    {"znak": "SP3NER", "imie": "Emil", "uwagi": "", "przyklad": false},
+    {"znak": "SP3SBQ", "imie": "Kazimierz", "uwagi": "", "przyklad": false}
   ]
 }
