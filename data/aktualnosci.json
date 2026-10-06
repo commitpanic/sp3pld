@@ -1,6 +1,81 @@
 {
   "wpisy": [
     {
+      "id": "wwa-2026",
+      "data": "2026-02-08",
+      "tytul": "WWA 2026 — SP3PLD najlepszą polską stacją klubową",
+      "zajawka": "4 584 łączności z 95 stacjami specjalnymi i 12. miejsce na świecie w kategorii DIGI.",
+      "tresc": [
+        "W dniach 1–31 stycznia 2026 r. odbyła się trzecia edycja współzawodnictwa World Wide Award (WWA) — międzynarodowej akcji, w której ok. 1 200 operatorów pracowało ze 110 stacji specjalnych w 44 krajach na 8 pasmach KF. Polskie stacje zajęły w niej drugie miejsce pod względem liczby łączności.",
+        "Wśród polskich stacji klubowych najlepszy wynik uzyskał SP3PLD. Operatorzy klubu — Zdzisław SP3DUG, Przemek SP3FAR i Czesław SP3IBM — przeprowadzili **4 584 QSO z 95 stacjami specjalnymi**, na wszystkich pasmach i sześcioma emisjami.",
+        ["kategoria MIXED: 15. miejsce w Polsce, 174. na świecie,", "kategoria DIGI: 4. miejsce w Polsce, **12. na świecie** (dyplom All Bands DIGI — Gold)."]
+      ],
+      "autor": "na podstawie materiału Przemka SP3FAR (OT 32 PZK)",
+      "zdjecie": { "plik": "2026-wwa/1.jpg", "opis": "Dyplom World Wide Award 2026 dla SP3PLD — All Bands DIGI Gold, 12. miejsce" },
+      "linki": [
+        { "tekst": "Artykuł „Polskie stacje w WWA 2026” na stronie OT 32 PZK", "url": "https://ot32.pzk.org.pl/polskie-stacje-w-wwa-2026/" },
+        { "tekst": "Pełne wyniki WWA (hamaward.cloud)", "url": "https://hamaward.cloud/wwa/award" }
+      ]
+    },
+    {
+      "id": "pzk95-2025",
+      "data": "2025-05-03",
+      "tytul": "95. rocznica PZK i 100-lecie IARU — 8. miejsce SP3PLD",
+      "zajawka": "Najlepszy wynik wśród polskich stacji klubowych: 8. miejsce w kategorii MIXED i 4. w DIGI.",
+      "tresc": [
+        "W dniach 17.02–03.03 oraz 11.04–25.04.2025 r. trwała aktywność polskich stacji okolicznościowych z okazji 95. rocznicy powołania PZK i 100-lecia IARU. Łączności z tymi stacjami dawały punkty do klasyfikacji końcowej i dyplomów. Stacje okolicznościowe przeprowadziły łącznie 358 653 QSO z 38 559 znakami ze 197 podmiotów DXCC.",
+        "Najlepszy wynik wśród polskich stacji klubowych wywalczył SP3PLD (operatorzy Zdzisław SP3DUG i Czesław SP3IBM):",
+        ["**8. miejsce w kategorii MIXED** (na 38 491 sklasyfikowanych),", "4. miejsce w kategorii DIGI (na 12 900)."],
+        "Ze Świebodzina startował także Ryszard SP3HBF — 39. miejsce w kategorii SSB."
+      ],
+      "autor": "na podstawie materiału Czesława SP3IBM (OT 32 PZK)",
+      "zdjecie": { "plik": "2025-pzk95/1.jpg", "opis": "Dyplom 95-lecia PZK i 100-lecia IARU dla SP3PLD — 8. miejsce MIXED" },
+      "galeria": [
+        { "plik": "2025-pzk95/2.jpg", "opis": "Dyplom dla SP3PLD — 4. miejsce DIGI" },
+        { "plik": "2025-pzk95/3.jpg", "opis": "Dyplom dla SP3HBF — 39. miejsce SSB" }
+      ],
+      "linki": [
+        { "tekst": "Artykuł „SP3PLD – 95-rocznica powołania PZK” na stronie OT 32 PZK", "url": "https://ot32.pzk.org.pl/sp3pld-95-rocznica-powolania-pzk/" }
+      ]
+    },
+    {
+      "id": "wwa-2024",
+      "data": "2024-02-02",
+      "tytul": "World Wide Award 2024",
+      "zajawka": "SP3PLD z najlepszym wynikiem wśród polskich stacji klubowych w akcji na 150. rocznicę urodzin Marconiego.",
+      "tresc": [
+        "W dniach 1–31 stycznia 2024 r. trwała aktywność stacji okolicznościowych z okazji 150. rocznicy urodzin Guglielmo Marconiego, jednego z pionierów radia. Stacje te przeprowadziły ponad 1,7 mln łączności z 110 942 znakami z 253 podmiotów DXCC.",
+        "Wśród polskich stacji klubowych najlepszy wynik uzyskał SP3PLD: **272. miejsce w kategorii MIXED** (na 110 385 sklasyfikowanych) oraz 40. miejsce w kategorii DIGI. Klub przeprowadził 991 łączności z 40 stacjami specjalnymi na 8 pasmach, pięcioma emisjami.",
+        "Ze Świebodzina i powiatu w akcji brały udział także stacje SP3DUG, SP3HBF, SP3BLZ i SP3WIP."
+      ],
+      "autor": "na podstawie materiału Czesława SP3IBM (OT 32 PZK)",
+      "zdjecie": { "plik": "2024-wwa/1.jpg", "opis": "Dyplom World Wide Award 2024 dla SP3PLD — 272. miejsce, All Bands Mixed" },
+      "linki": [
+        { "tekst": "Artykuł „World Wide Award 2024” na stronie OT 32 PZK", "url": "https://ot32.pzk.org.pl/world-wide-award-2024/" }
+      ]
+    },
+    {
+      "id": "top-honor-roll-2023",
+      "data": "2023-06-03",
+      "tytul": "Top of Honor Roll Award dla SP3PLD",
+      "zajawka": "Klub potwierdził wszystkie 340 podmiotów DXCC — jako jedyny klub w Polsce.",
+      "tresc": [
+        "Klub SP3PLD uzyskał potwierdzenie **wszystkich 340 podmiotów DXCC** i spełnił wymagania wyróżnienia **ARRL DXCC Top of Honor Roll** w kategorii MIXED. SP3PLD jest obecnie jedynym klubem w Polsce, który osiągnął ten wynik.",
+        "Plakietę wręczył członkom klubu i prezesowi Czesławowi SP3IBM prezes Lubuskiego Oddziału PZK Marek SP3AMO podczas Walnego Zebrania członków oddziału, które odbyło się 3 czerwca 2023 r. w Świebodzinie.",
+        "Gośćmi spotkania byli Burmistrz Świebodzina Tomasz Sielicki oraz dyrektor Świebodzińskiego Domu Kultury Stanisław Mosiejko. Pan Dyrektor wspominał, że jego początki pracy w domu kultury zbiegły się z powstaniem klubu w 1981 roku — mógł więc na bieżąco śledzić kolejne etapy realizacji programu DXCC, zwieńczone najwyższym wyróżnieniem."
+      ],
+      "autor": "na podstawie materiału ze strony OT 32 PZK",
+      "zdjecie": { "plik": "2023-top-honor-roll/1.jpg", "opis": "Plakieta ARRL DXCC Top of Honor Roll Award dla Klubu Krótkofalowców SP3PLD" },
+      "galeria": [
+        { "plik": "2023-top-honor-roll/2.jpg", "opis": "Maciej SP3BKR ogląda grawerton dla SP3PLD" },
+        { "plik": "2023-top-honor-roll/3.jpg", "opis": "Dyplom DX Century Club dla SP3PLD z naklejkami do 340" }
+      ],
+      "linki": [
+        { "tekst": "Artykuł „Top of Honor Roll Award dla SP3PLD” na stronie OT 32 PZK", "url": "https://ot32.pzk.org.pl/top-od-honor-roll-award-dla-sp3pld/" },
+        { "tekst": "Statystyki DXCC i WAZ klubu", "url": "osiagniecia.html" }
+      ]
+    },
+    {
       "id": "swieta-2018",
       "data": "2018-12",
       "dataTekst": "grudzień 2018",

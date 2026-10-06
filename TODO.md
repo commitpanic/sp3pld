@@ -2,7 +2,7 @@
 
 ## Do ustalenia z klubem
 - [ ] Domena docelowa (sp3pld.e7.pl zostaje? nowa sp3pld.pl / .org.pl?) → `CNAME`, `sitemap.xml`, absolutne `og:image`
-- [ ] E-mail klubu (stara strona: prawdopodobnie sp3pld@wp.pl — potwierdzić) → stopka, kontakt
+- [ ] E-mail klubu → stopka, kontakt. Strona OT 32 „Kluby” (stan 2026) podaje: **sp3pld@e7.pl**, adres korespondencyjny: skr. poczt. 30, ul. Piłsudskiego 21, 66-200 Świebodzin — potwierdzić, czy aktualne
 - [ ] Administrator danych do polityki prywatności
 - [ ] Konto EmailJS → klucze w `assets/js/main.js` (`EMAILJS`)
 - [ ] Czy spotkania nadal w piątki 18:00–20:00
