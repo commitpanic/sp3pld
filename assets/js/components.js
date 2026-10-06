@@ -15,10 +15,16 @@
   const status = `
   <div class="statusbar" role="region" aria-label="Informacje o stacji">
     <div class="wrap">
-      <span><span class="led" id="club-led"></span><span id="club-status">Spotkania: piątek 18:00–20:00</span></span>
-      <span>QRG <b>145.275</b> MHz</span>
-      <span>LOC <b>JO72SF</b></span>
-      <span>UTC <b id="utc-clock">--:--</b></span>
+      <div class="ticker">
+        <div class="ticker-track">
+          <div class="ticker-items">
+            <span><span class="led" data-club-led></span><span data-club-status>Spotkania: piątek 18:00–20:00</span></span>
+            <span>QRG <b>145.275</b> MHz</span>
+            <span>LOC <b>JO72SF</b></span>
+            <span>UTC <b data-utc>--:--</b></span>
+          </div>
+        </div>
+      </div>
       <span class="tools">
         <button type="button" data-fs="-1" aria-label="Zmniejsz tekst">A−</button>
         <button type="button" data-fs="1" aria-label="Powiększ tekst">A+</button>

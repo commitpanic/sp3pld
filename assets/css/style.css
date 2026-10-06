@@ -55,11 +55,24 @@ h3 { font-size: 1.2rem; }
 
 /* ---------- pasek stacji (UTC, QRG, dzień klubowy) ---------- */
 .statusbar { background: var(--band-dark); color: #d6e8e1; font: 500 .82rem/1 var(--mono); }
-.statusbar .wrap { display: flex; gap: 22px; align-items: center; padding-block: 8px; overflow-x: auto; white-space: nowrap; scrollbar-width: none; }
+.statusbar .wrap { display: flex; gap: 16px; align-items: center; padding-block: 8px; white-space: nowrap; }
+/* ticker: przewija się w pętli tylko gdy treść się nie mieści (klasa .is-scrolling z main.js) */
+.ticker { flex: 1; min-width: 0; overflow: hidden; }
+.ticker-track { display: flex; width: max-content; }
+.ticker-items { display: flex; gap: 22px; }
+.ticker.is-scrolling {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12px, #000 calc(100% - 20px), transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 12px, #000 calc(100% - 20px), transparent);
+}
+.ticker.is-scrolling .ticker-items { padding-right: 48px; }
+.ticker.is-scrolling .ticker-track { animation: ticker var(--ticker-dur, 20s) linear infinite; }
+.ticker.is-scrolling:hover .ticker-track, .ticker.is-scrolling:active .ticker-track { animation-play-state: paused; }
+@keyframes ticker { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ticker { overflow-x: auto; scrollbar-width: none; } }
 .statusbar b { color: #fff; font-weight: 700; }
 .statusbar .led { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #5d7d73; margin-right: 6px; vertical-align: 1px; }
 .statusbar .led.on { background: #5dff9e; box-shadow: 0 0 8px #5dff9e; }
-.statusbar .tools { margin-left: auto; display: flex; gap: 6px; }
+.statusbar .tools { margin-left: auto; display: flex; gap: 6px; flex: none; }
 .statusbar button {
   font: inherit; color: #d6e8e1; background: transparent; border: 1px solid #3f7064;
   border-radius: 4px; padding: 3px 8px; cursor: pointer;

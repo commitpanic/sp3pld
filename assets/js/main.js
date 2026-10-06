@@ -5,22 +5,43 @@
     set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} },
   };
 
-  // Zegar UTC — każdy krótkofalowiec loguje w UTC
-  const clock = document.getElementById('utc-clock');
+  // Pasek stacji: na wąskim ekranie informacje przewijają się w pętli (ticker)
+  const ticker = document.querySelector('.ticker');
+  const noMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  function setupTicker() {
+    if (!ticker) return;
+    const track = ticker.querySelector('.ticker-track');
+    const items = track.querySelector('.ticker-items');
+    track.querySelectorAll('.ticker-clone').forEach(c => c.remove());
+    ticker.classList.remove('is-scrolling');
+    if (noMotion.matches || items.scrollWidth <= ticker.clientWidth) return;
+    ticker.classList.add('is-scrolling');
+    const clone = items.cloneNode(true);
+    clone.classList.add('ticker-clone');
+    clone.setAttribute('aria-hidden', 'true');
+    track.appendChild(clone);
+    // stała prędkość ok. 40 px/s niezależnie od długości treści
+    ticker.style.setProperty('--ticker-dur', Math.max(8, items.offsetWidth / 40) + 's');
+  }
+  let tickerTimer;
+  const refreshTicker = () => { clearTimeout(tickerTimer); tickerTimer = setTimeout(setupTicker, 150); };
+  addEventListener('resize', refreshTicker);
+  if (noMotion.addEventListener) noMotion.addEventListener('change', refreshTicker);
+
+  // Zegar UTC — każdy krótkofalowiec loguje w UTC; status dnia klubowego (czas lokalny: piątek 18–20)
+  const all = sel => document.querySelectorAll(sel);
+  let lastStatus = '';
   function tick() {
     const d = new Date();
-    if (clock) clock.textContent = d.toISOString().slice(11, 16);
-
-    // Status dnia klubowego (czas lokalny: piątek 18–20)
-    const led = document.getElementById('club-led');
-    const st = document.getElementById('club-status');
-    if (!led || !st) return;
+    all('[data-utc]').forEach(el => { el.textContent = d.toISOString().slice(11, 16); });
     const fri = d.getDay() === 5, h = d.getHours();
     const on = fri && h >= 18 && h < 20;
-    led.classList.toggle('on', on);
-    st.textContent = on ? 'Klub otwarty — zapraszamy!'
+    const status = on ? 'Klub otwarty — zapraszamy!'
       : fri && h < 18 ? 'Dziś spotkanie o 18:00'
       : 'Spotkania: piątek 18:00–20:00';
+    all('[data-club-led]').forEach(el => el.classList.toggle('on', on));
+    all('[data-club-status]').forEach(el => { el.textContent = status; });
+    if (status !== lastStatus) { lastStatus = status; setupTicker(); }
   }
   tick(); setInterval(tick, 15000);
 
@@ -38,7 +59,7 @@
   applyFs();
   document.querySelectorAll('[data-fs]').forEach(b => b.addEventListener('click', () => {
     fs = Math.round(Math.min(1.3, Math.max(0.9, fs + 0.1 * Number(b.dataset.fs))) * 10) / 10;
-    applyFs(); store.set('fs', fs);
+    applyFs(); store.set('fs', fs); refreshTicker();
   }));
 
   // Wysoki kontrast
