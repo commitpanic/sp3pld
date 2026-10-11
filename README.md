@@ -77,8 +77,8 @@ Wpisy wyświetlają się w kolejności z pliku — **nowy wpis dodaj na górze**
 
 - `stanNa` — data zestawienia (RRRR-MM-DD), wyświetlana nad tabelami,
 - `uwaga` — notka pod tabelami (pusty tekst = brak notki),
-- `honorRoll.potwierdzone` / `wszystkie` — licznik „DXCC Mixed” (strona główna i Osiągnięcia),
-- `skala.dxcc` / `skala.waz` — maksimum dla pasków (aktualna liczba podmiotów DXCC, 40 stref WAZ),
+- `honorRoll.potwierdzone` / `wszystkie` — aktualne podmioty DXCC: licznik „Honor Roll #1” (strona główna i Osiągnięcia) i zapis „340/340” w tekście,
+- `skala.dxcc` / `skala.waz` — wartość odpowiadająca pełnemu paskowi (DXCC: najwyższy wynik, obecnie MIXED 346 — liczby obejmują podmioty usunięte; WAZ: 40 stref),
 - `dxcc.emisje`, `dxcc.pasma`, `waz.emisje`, `waz.pasma` — wiersze tabel: `{ "nazwa": "20 m", "worked": 298, "confirmed": 286 }`.
   Brak danych: `null`. Wiersz `MIXED` jest wyróżniony i zasila licznik „Strefy WAZ”.
 
