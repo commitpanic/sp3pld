@@ -4,7 +4,7 @@
 - [ ] Domena docelowa (sp3pld.e7.pl zostaje? nowa sp3pld.pl / .org.pl?) → `CNAME`, `sitemap.xml`, absolutne `og:image`
 - [ ] E-mail klubu → stopka, kontakt. Strona OT 32 „Kluby” (stan 2026) podaje: **sp3pld@e7.pl**, adres korespondencyjny: skr. poczt. 30, ul. Piłsudskiego 21, 66-200 Świebodzin — potwierdzić, czy aktualne
 - [ ] Administrator danych do polityki prywatności
-- [ ] Konto EmailJS → klucze w `assets/js/main.js` (`EMAILJS`)
+- [ ] Klucz Web3Forms dla **sp3pld@vp.pl** (web3forms.com → Create Access Key; klucz przychodzi na skrzynkę klubu) → `WEB3FORMS_KEY` w `assets/js/main.js`, potem test wysyłki
 - [ ] Czy spotkania nadal w piątki 18:00–20:00
 - [ ] Lista członków (znak, imię, QTH — za zgodą) + Silent Keys
 - [x] Aktualne statystyki DXCC/WAZ — zestawienie SP3IBM z 11.10.2026 w `data/osiagniecia.json` (Honor Roll #1, 340/340; dane ARRL z 05.10.2026: `_zrodla/arrl-dxcc-2026-10-05/`)

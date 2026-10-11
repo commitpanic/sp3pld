@@ -12,12 +12,12 @@ osiagniecia.html         DXCC Honor Roll, tabele DXCC/WAZ, dyplomy
 czlonkowie.html          lista członków i Silent Keys
 galeria.html             galeria z filtrami i podglądem
 linki.html               linkownia
-kontakt.html             adres, mapa (po kliknięciu), formularz EmailJS
+kontakt.html             adres, mapa Google, formularz Web3Forms
 polityka-prywatnosci.html
 404.html
 assets/css/style.css     motyw (tokeny kolorów w :root)
 assets/js/components.js  pasek stacji, menu i stopka (wspólne dla wszystkich stron)
-assets/js/main.js        zegar UTC, status dnia klubowego, A−/A+, kontrast, galeria, mapa, formularz
+assets/js/main.js        pasek stacji (ticker, zegar UTC, status), A−/A+, kontrast, galeria, formularz
 assets/img/              zdjęcia (archiwum starej strony), logotypy PZK / ŚDK / herb Gminy
 ```
 
@@ -99,6 +99,16 @@ Wpisy wyświetlają się w kolejności z pliku; przy Silent Keys dopisywane jest
 
 > Po edycji sprawdź poprawność JSON-a (np. https://jsonlint.com) — jeden brakujący przecinek blokuje wczytanie danych.
 > Podgląd lokalny wymaga serwera (`python -m http.server`), bo przeglądarka nie wczyta JSON-a z `file://`.
+
+## Formularz kontaktowy (Web3Forms)
+
+Wiadomości z formularza trafiają bezpośrednio na skrzynkę klubu przez [Web3Forms](https://web3forms.com) (darmowo do 250 wiadomości/mies.).
+
+1. Na web3forms.com → „Create Access Key” wpisać adres klubu — klucz przychodzi mailem na tę skrzynkę.
+2. Wkleić klucz w `assets/js/main.js` → `const WEB3FORMS_KEY = '...'`.
+3. Bez klucza formularz jest wyłączony z komunikatem „w przygotowaniu”.
+
+Klucz jest publiczny z założenia (pozwala tylko wysłać wiadomość na ten adres). Pole `website` to pułapka na boty; „Odpowiedz” w skrzynce trafia do nadawcy (pole `email`).
 
 ## Publikacja
 
