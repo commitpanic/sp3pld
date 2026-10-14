@@ -319,6 +319,36 @@ tr.placeholder td { color: var(--ink-soft); font-style: italic; }
 }
 .map-box iframe { display: block; width: 100%; height: 100%; border: 0; }
 
+/* Pogoda i propagacja */
+.prop-banner { margin: 0 0 32px; }
+.prop-banner img { width: 100%; max-width: 615px; height: auto; border-radius: 4px; background: #000; box-shadow: var(--shadow); }
+.prop-grid { align-items: start; }
+.prop-grid figure { margin: 0; }
+.prop-grid img { width: 100%; max-width: 520px; height: auto; border-radius: 4px; background: #000; box-shadow: var(--shadow); }
+.prop-grid .station dd { font-family: var(--font); font-weight: 400; font-size: .92rem; }
+.wx-search { display: grid; gap: 8px; margin-bottom: 18px; }
+.wx-search label { font-weight: 600; font-size: .92rem; }
+.wx-search-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.wx-search input {
+  flex: 1 1 220px; font: inherit; padding: 10px 12px; border: 1.5px solid var(--line); border-radius: var(--r);
+  background: #fff; color: var(--ink);
+}
+.wx-search input:focus { border-color: var(--band); outline: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--band) 20%, transparent); }
+.wx-status { margin: 0; font-size: .92rem; color: var(--ink-soft); min-height: 1.4em; }
+.wx-results { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: .88rem; color: var(--ink-soft); }
+.wx-results button {
+  font: inherit; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+  padding: 5px 12px; cursor: pointer;
+}
+.wx-results button:hover { border-color: var(--band); }
+.wx-results small { color: var(--ink-soft); }
+.wx-box {
+  aspect-ratio: 16/10; min-height: 420px; border-radius: var(--r); border: 1px solid var(--line); overflow: hidden;
+  background: repeating-linear-gradient(45deg, var(--paper-2) 0 12px, var(--paper) 12px 24px);
+}
+.wx-box iframe { display: block; width: 100%; height: 100%; border: 0; }
+@media (max-width: 600px) { .wx-box { aspect-ratio: auto; height: 520px; } }
+
 /* Partnerzy */
 .partners { display: flex; flex-wrap: wrap; gap: 16px; }
 .partner {

@@ -67,6 +67,7 @@
           <h4>Strona</h4>
           <ul>${NAV.map(([, href, label]) => `<li><a href="${href}">${label}</a></li>`).join('')}
             <li><a href="linki.html">Linkownia</a></li>
+            <li><a href="pogoda.html">Pogoda i propagacja</a></li>
           </ul>
         </div>
         <div>

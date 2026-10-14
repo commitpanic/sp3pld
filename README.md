@@ -12,11 +12,13 @@ osiagniecia.html         DXCC Honor Roll, tabele DXCC/WAZ, dyplomy
 czlonkowie.html          lista członków i Silent Keys
 galeria.html             galeria z filtrami i podglądem
 linki.html               linkownia
+pogoda.html              pogoda i propagacja (HamQSL N0NBH + Windy, wyszukiwarka miejscowości: Open-Meteo) — link tylko w stopce
 kontakt.html             adres, e-maile klubu i prezesa, mapa Google
 polityka-prywatnosci.html
 404.html
 assets/css/style.css     motyw (tokeny kolorów w :root)
 assets/js/components.js  pasek stacji, menu i stopka (wspólne dla wszystkich stron)
+assets/js/pogoda.js      wyszukiwarka miejscowości → przestawia mapę Windy (geokoder Open-Meteo)
 assets/js/main.js        pasek stacji (ticker, zegar UTC, status), A−/A+, kontrast, galeria
 assets/img/              zdjęcia (archiwum starej strony), logotypy PZK / ŚDK / herb Gminy
 ```

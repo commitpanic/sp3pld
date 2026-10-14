@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pogoda i propagacja — SP3PLD Świebodzin</title>
+  <meta name="description" content="Aktualne warunki propagacji KF i UKF (N0NBH / HamQSL) oraz mapa pogody z prognozą dla Świebodzina.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pogoda i propagacja — SP3PLD Świebodzin">
+  <meta property="og:description" content="Aktualne warunki propagacji KF i UKF oraz mapa pogody z prognozą dla Świebodzina.">
+  <meta property="og:image" content="assets/img/qsl-sp3pld-vintage.jpg">
+  <meta name="theme-color" content="#1f6b5c">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="pogoda">
+  <a class="skip" href="#main">Przejdź do treści</a>
+  <div id="header-placeholder"></div>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow">WX · PROP</span>
+        <h1>Pogoda i propagacja</h1>
+        <p>Aktualne warunki propagacji na pasmach KF i UKF oraz pogoda nad Świebodzinem.</p>
+      </div>
+    </section>
+
+    <!-- PROPAGACJA -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div><span class="eyebrow">Propagacja</span><h2>Warunki na pasmach KF i UKF</h2></div>
+          <a href="https://www.hamqsl.com/solar.html" target="_blank" rel="noopener">Źródło: N0NBH / HamQSL →</a>
+        </div>
+        <figure class="prop-banner">
+          <a href="https://www.hamqsl.com/solar.html" target="_blank" rel="noopener">
+            <img data-live src="https://www.hamqsl.com/solar101vhfpic.php" alt="Aktualne dane słoneczno-ziemskie i ocena warunków propagacji na pasmach KF (w dzień i w nocy) oraz UKF — N0NBH" width="615" height="148">
+          </a>
+          <figcaption>Ocena warunków (Good / Fair / Poor) dla pasm KF w dzień i w nocy, zjawiska na UKF oraz indeksy słoneczne. Dane aktualizowane co godzinę.</figcaption>
+        </figure>
+
+        <div class="two-col prop-grid">
+          <figure>
+            <img data-live src="https://www.hamqsl.com/solarmap.php" alt="Mapa świata z podziałem na dzień i noc (szara linia) oraz aktualne indeksy słoneczne — N0NBH" width="400" height="200" loading="lazy">
+            <figcaption>Szara linia — granica dnia i nocy. Łączności wzdłuż niej są często wyjątkowo dobre na niższych pasmach.</figcaption>
+          </figure>
+          <dl class="station" aria-label="Objaśnienie indeksów">
+            <div><dt>SFI</dt><dd>strumień słoneczny 10,7 cm — im wyższy, tym lepiej otwarte wyższe pasma (15–10 m)</dd></div>
+            <div><dt>SN</dt><dd>liczba plam słonecznych</dd></div>
+            <div><dt>A / K</dt><dd>indeksy geomagnetyczne — im niższe, tym spokojniej; K ≥ 5 oznacza burzę magnetyczną</dd></div>
+            <div><dt>X-Ray</dt><dd>promieniowanie rentgenowskie; rozbłyski klasy M i X mogą zamknąć pasma KF</dd></div>
+            <div><dt>Geomag</dt><dd>stan pola magnetycznego Ziemi (QUIET = spokojne)</dd></div>
+            <div><dt>Sig Noise</dt><dd>szacowany poziom szumów w skali S</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- POGODA -->
+    <section class="section alt">
+      <div class="wrap">
+        <div class="section-head">
+          <div><span class="eyebrow">Pogoda</span><h2>Mapa pogody i prognoza</h2></div>
+          <a id="wx-open" href="https://www.windy.com/52.247/15.533?52.247,15.533,8" target="_blank" rel="noopener">Otwórz w Windy.com →</a>
+        </div>
+        <form class="wx-search" id="wx-search" role="search" aria-label="Pogoda dla miejscowości">
+          <label for="wx-q">Miejscowość</label>
+          <div class="wx-search-row">
+            <input id="wx-q" name="q" type="search" placeholder="np. Zielona Góra" autocomplete="off" required>
+            <button class="btn" type="submit">Pokaż pogodę</button>
+            <button class="btn ghost" type="button" id="wx-home">Świebodzin</button>
+          </div>
+          <p class="wx-status" role="status" aria-live="polite">Pokazuję: <strong>Świebodzin</strong>, województwo lubuskie</p>
+          <div class="wx-results" hidden></div>
+        </form>
+        <div class="wx-box">
+          <iframe id="wx-map" title="Mapa pogody i prognoza — Windy.com" src="https://embed.windy.com/embed2.html?lat=52.247&amp;lon=15.533&amp;detailLat=52.247&amp;detailLon=15.533&amp;width=650&amp;height=450&amp;zoom=7&amp;level=surface&amp;overlay=rain&amp;product=ecmwf&amp;menu=&amp;message=true&amp;marker=true&amp;calendar=now&amp;pressure=true&amp;type=map&amp;location=coordinates&amp;detail=true&amp;metricWind=km%2Fh&amp;metricTemp=%C2%B0C&amp;radarRange=-1"></iframe>
+        </div>
+        <p class="note" style="margin-top:16px">Przed burzą odłącz i uziem anteny. Aktualne wyładowania atmosferyczne pokazuje mapa <a href="https://map.blitzortung.org/#7/52.25/15.53" target="_blank" rel="noopener">Blitzortung</a>.</p>
+      </div>
+    </section>
+
+    <!-- ŹRÓDŁA -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><div><span class="eyebrow">Więcej</span><h2>Przydatne źródła</h2></div></div>
+        <ul class="links">
+          <li><a href="https://meteo.imgw.pl/" target="_blank" rel="noopener"><strong>IMGW-PIB Meteo</strong><span>Prognozy i ostrzeżenia meteorologiczne dla Polski</span></a></li>
+          <li><a href="https://map.blitzortung.org/#7/52.25/15.53" target="_blank" rel="noopener"><strong>Blitzortung</strong><span>Wyładowania atmosferyczne na żywo</span></a></li>
+          <li><a href="https://www.swpc.noaa.gov/" target="_blank" rel="noopener"><strong>NOAA SWPC</strong><span>Pogoda kosmiczna: rozbłyski, burze geomagnetyczne</span></a></li>
+          <li><a href="https://www.hamqsl.com/solar.html" target="_blank" rel="noopener"><strong>HamQSL — N0NBH</strong><span>Dane słoneczno-ziemskie i warunki propagacji</span></a></li>
+          <li><a href="https://www.voacap.com/hf/" target="_blank" rel="noopener"><strong>VOACAP Online</strong><span>Prognoza propagacji KF na wybranej trasie</span></a></li>
+          <li><a href="https://www.dxsummit.fi/" target="_blank" rel="noopener"><strong>DX Summit</strong><span>Klaster DX — co słychać teraz na pasmach</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/pogoda.js"></script>
+</body>
+</html>
