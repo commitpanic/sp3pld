@@ -45,6 +45,15 @@
   }
   tick(); setInterval(tick, 15000);
 
+  // E-maile ukryte przed robotami: <a data-u="nazwa" data-d="domena.pl"> — w HTML nie ma pełnego adresu ani „@”.
+  // Skrypt składa adres i link mailto:. Bez JS widać zapis „nazwa (małpa) domena.pl”.
+  // data-keep-text — zostaw tekst linku (np. przycisk „Napisz e-mail”), ustaw tylko adres.
+  document.querySelectorAll('a[data-u][data-d]').forEach(a => {
+    const addr = a.dataset.u + String.fromCharCode(64) + a.dataset.d;
+    a.href = 'mailto:' + addr;
+    if (!a.hasAttribute('data-keep-text')) a.textContent = addr;
+  });
+
   // Menu mobilne
   const btn = document.querySelector('.nav-toggle');
   const nav = document.getElementById('nav');
@@ -126,50 +135,4 @@
     if (e.key === 'ArrowLeft') lbStep(-1);
     if (e.key === 'ArrowRight') lbStep(1);
   });
-
-  // Formularz kontaktowy — Web3Forms: wiadomości trafiają bezpośrednio na skrzynkę klubu.
-  // Klucz dostępu: web3forms.com → „Create Access Key” na adres klubu (przychodzi mailem).
-  // Klucz jest z założenia publiczny — pozwala tylko wysłać wiadomość na ten jeden adres.
-  const WEB3FORMS_KEY = '';
-  const form = document.getElementById('contact-form');
-  if (form) {
-    const status = form.querySelector('.form-status');
-    const submit = form.querySelector('button[type="submit"]');
-    const val = n => form.elements.namedItem(n).value.trim(); // uwaga: form.name to atrybut formularza, nie pole
-    if (!WEB3FORMS_KEY) {
-      status.textContent = 'Formularz jest w przygotowaniu — do tego czasu zapraszamy w piątek lub na 145.275 MHz.';
-      submit.disabled = true;
-    }
-    form.addEventListener('submit', async e => {
-      e.preventDefault();
-      if (!WEB3FORMS_KEY) return;
-      if (val('website')) return; // pułapka na boty (honeypot)
-      if (!form.reportValidity()) return; // wymagane pola i zgoda RODO
-      submit.disabled = true;
-      status.textContent = 'Wysyłanie…';
-      try {
-        const r = await fetch('https://api.web3forms.com/submit', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({
-            access_key: WEB3FORMS_KEY,
-            subject: 'Wiadomość ze strony SP3PLD od ' + val('name'),
-            from_name: 'Strona SP3PLD',
-            name: val('name'),
-            email: val('email'), // Web3Forms ustawia go jako adres do odpowiedzi
-            message: val('message'),
-            botcheck: '',
-          }),
-        });
-        const res = await r.json().catch(() => ({}));
-        if (!r.ok || !res.success) throw new Error(res.message || r.status);
-        form.reset();
-        status.textContent = 'Dziękujemy! Wiadomość została wysłana. 73!';
-      } catch (err) {
-        status.textContent = 'Nie udało się wysłać wiadomości. Spróbuj ponownie później albo odwiedź nas w piątek.';
-      } finally {
-        submit.disabled = false;
-      }
-    });
-  }
 })();

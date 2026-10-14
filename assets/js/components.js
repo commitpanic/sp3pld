@@ -84,7 +84,8 @@
             <li>Świebodziński Dom Kultury<br>ul. Piłsudskiego 39/41<br>66-200 Świebodzin</li>
             <li>Piątek 18:00–20:00</li>
             <li class="mono">145.275 MHz FM</li>
-            <li><a href="kontakt.html">Napisz do nas →</a></li>
+            <li><a data-u="sp3pld" data-d="vp.pl">sp3pld (małpa) vp.pl</a></li>
+            <li><a href="kontakt.html">Dane kontaktowe →</a></li>
           </ul>
         </div>
       </div>

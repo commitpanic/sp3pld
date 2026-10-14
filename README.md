@@ -12,12 +12,12 @@ osiagniecia.html         DXCC Honor Roll, tabele DXCC/WAZ, dyplomy
 czlonkowie.html          lista członków i Silent Keys
 galeria.html             galeria z filtrami i podglądem
 linki.html               linkownia
-kontakt.html             adres, mapa Google, formularz Web3Forms
+kontakt.html             adres, e-maile klubu i prezesa, mapa Google
 polityka-prywatnosci.html
 404.html
 assets/css/style.css     motyw (tokeny kolorów w :root)
 assets/js/components.js  pasek stacji, menu i stopka (wspólne dla wszystkich stron)
-assets/js/main.js        pasek stacji (ticker, zegar UTC, status), A−/A+, kontrast, galeria, formularz
+assets/js/main.js        pasek stacji (ticker, zegar UTC, status), A−/A+, kontrast, galeria
 assets/img/              zdjęcia (archiwum starej strony), logotypy PZK / ŚDK / herb Gminy
 ```
 
@@ -100,56 +100,15 @@ Wpisy wyświetlają się w kolejności z pliku; przy Silent Keys dopisywane jest
 > Po edycji sprawdź poprawność JSON-a (np. https://jsonlint.com) — jeden brakujący przecinek blokuje wczytanie danych.
 > Podgląd lokalny wymaga serwera (`python -m http.server`), bo przeglądarka nie wczyta JSON-a z `file://`.
 
-## Formularz kontaktowy (Web3Forms)
+## Kontakt
 
-Wiadomości z formularza na stronie **Kontakt** trafiają bezpośrednio na skrzynkę klubu **sp3pld@vp.pl** przez [Web3Forms](https://web3forms.com) — bez pośredniego konta (np. Gmaila). Darmowy plan: 250 wiadomości miesięcznie.
+Strona nie ma formularza kontaktowego (usunięty 14.10.2026 — wcześniej przygotowana integracja Web3Forms jest w historii gita, commit `0202b17`).
+Na stronie **Kontakt** są dane: adres siedziby, spotkania, QRG, QSL, mapa Google oraz e-maile — klubu **sp3pld (małpa) vp.pl** i prezesa (Czesław SP3IBM, sp3ibm (małpa) vp.pl). E-mail klubu jest też w stopce (`assets/js/components.js`) i w polityce prywatności.
 
-**Stan na 11.10.2026:** kod jest gotowy i opublikowany, brakuje tylko klucza. Do tego czasu formularz jest wyłączony z komunikatem „Formularz jest w przygotowaniu…”.
-
-### Konfiguracja — krok po kroku
-
-1. **Utworzenie klucza** (potrzebny dostęp do skrzynki sp3pld@vp.pl)
-   - wejść na https://web3forms.com → przycisk **„Create your Access Key”**,
-   - wpisać adres **sp3pld@vp.pl** i zatwierdzić,
-   - na skrzynkę sp3pld@vp.pl przyjdzie mail od Web3Forms z kluczem (*Access Key*) w postaci `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
-     (jeśli nie ma — sprawdzić folder **Spam / Oferty**).
-
-2. **Wklejenie klucza** w `assets/js/main.js` (sekcja „Formularz kontaktowy”):
-
-   ```js
-   const WEB3FORMS_KEY = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx';
-   ```
-
-   Nic więcej nie trzeba zmieniać — formularz włącza się automatycznie, gdy klucz nie jest pusty.
-
-3. **Test lokalny**
-   - `python -m http.server 8732` → http://localhost:8732/kontakt.html,
-   - wypełnić formularz (imię, e-mail, wiadomość, zgoda RODO) i wysłać,
-   - powinien pojawić się komunikat „Dziękujemy! Wiadomość została wysłana. 73!”,
-   - sprawdzić, czy mail dotarł na sp3pld@vp.pl (temat: „Wiadomość ze strony SP3PLD od …”, także w Spamie),
-   - kliknąć „Odpowiedz” — adresatem powinien być e-mail wpisany w formularzu.
-
-4. **Publikacja** — commit + push na `main`; GitHub Pages przebuduje stronę w ok. minutę. Powtórzyć test na https://commitpanic.github.io/sp3pld/kontakt.html.
-
-5. **Po teście** — w `TODO.md` odhaczyć punkt o kluczu Web3Forms; jeśli mail trafił do Spamu, oznaczyć go w skrzynce vp.pl jako „To nie spam”.
-
-### Jak to działa
-
-| Element | Opis |
-|---|---|
-| Kod | `assets/js/main.js` → `fetch('https://api.web3forms.com/submit', …)` z polami `access_key`, `subject`, `from_name`, `name`, `email`, `message` |
-| Odbiorca | adres, dla którego wygenerowano klucz — zmiana adresu = nowy klucz |
-| Odpowiedź | Web3Forms ustawia pole `email` jako *Reply-To* |
-| Antyspam | ukryte pole `website` (honeypot) + walidacja wymaganych pól i zgody RODO przed wysłaniem; Web3Forms ma własne filtry |
-| Bezpieczeństwo | klucz jest **jawny z założenia** (widoczny w kodzie strony) — pozwala tylko wysłać wiadomość na ten jeden adres, nie daje dostępu do skrzynki |
-| RODO | Web3Forms opisany w `polityka-prywatnosci.html` jako podmiot przetwarzający; administrator danych — **do uzupełnienia** |
-
-### Gdy coś nie działa
-
-- **„Nie udało się wysłać wiadomości…”** — sprawdzić w konsoli przeglądarki (F12 → Console / Network → `submit`): błędny klucz zwraca 400, przekroczony limit 429.
-- **Brak maila** — folder Spam; poprawność klucza (czy na pewno ten z maila dla sp3pld@vp.pl).
-- **Zmiana adresu odbiorcy** — wygenerować nowy klucz dla nowego adresu i podmienić `WEB3FORMS_KEY`.
-- **Limit 250/mies.** — przy normalnym ruchu klubu nieosiągalny; ewentualnie plan płatny lub drugi klucz.
+**E-maile są ukryte przed robotami zbierającymi adresy:** w HTML nie ma pełnego adresu ani znaku „@”, tylko np.
+`<a data-u="sp3pld" data-d="vp.pl">sp3pld (małpa) vp.pl</a>` — skrypt w `main.js` składa z tego klikalny link `mailto:`.
+Dodając nowy adres, używaj tej samej formy; `data-keep-text` zostawia tekst linku (np. przycisk „Napisz e-mail do klubu”).
+Nie wpisuj pełnych adresów także w plikach `.md` — GitHub Pages serwuje je publicznie.
 
 ## Publikacja
 
