@@ -17,7 +17,8 @@
     {"znak": "SP3SW ex SQ3HMK", "imie": "Tadeusz", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
     {"znak": "SP3HMT ex SQ3HMT", "imie": "Agnieszka", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
     {"znak": "SQ3HLI", "imie": "Ryszard", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
-    {"znak": "SQ3VAR", "imie": "Andrzej", "qth": "Świebodzin", "uwagi": "", "przyklad": false}
+    {"znak": "SQ3VAR", "imie": "Andrzej", "qth": "Świebodzin", "uwagi": "", "przyklad": false},
+    {"znak": "SP3FCK", "imie": "Jakub", "qth": "Świebodzin", "uwagi": "", "przyklad": false}
   ],
   "silentKeys": [
     {"znak": "SP3VV", "imie": "Piotr", "uwagi": "", "przyklad": false},
