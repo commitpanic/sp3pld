@@ -2,7 +2,7 @@
 
 ## Do ustalenia z klubem
 - [ ] Domena docelowa (sp3pld.e7.pl zostaje? nowa sp3pld.pl / .org.pl?) → `CNAME`, `sitemap.xml`, absolutne `og:image`
-- [x] E-mail klubu: **sp3pld (małpa) vp.pl**, prezes SP3IBM: sp3ibm (małpa) vp.pl (od Kuby, 14.10.2026) — na stronie Kontakt, w stopce i polityce prywatności (ukryte przed robotami)
+- [x] E-mail klubu: **sp3pld (małpa) vp.pl**, opiekun klubu SP3IBM: sp3ibm (małpa) vp.pl (od Kuby, 14.10.2026) — na stronie Kontakt, w stopce i polityce prywatności (ukryte przed robotami)
 - [ ] Adres korespondencyjny ze strony OT 32 (skr. poczt. 30, ul. Piłsudskiego 21) — czy aktualny i czy podawać na stronie? Na OT 32 jest też stary e-mail sp3pld (małpa) e7.pl — warto poprosić OT 32 o aktualizację
 - [ ] Administrator danych do polityki prywatności
 - [ ] Czy spotkania nadal w piątki 18:00–20:00

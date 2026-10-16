@@ -13,7 +13,7 @@ czlonkowie.html          lista członków i Silent Keys
 galeria.html             galeria z filtrami i podglądem
 linki.html               linkownia
 pogoda.html              pogoda i propagacja (HamQSL N0NBH + Windy, wyszukiwarka miejscowości: Open-Meteo) — link tylko w stopce
-kontakt.html             adres, e-maile klubu i prezesa, mapa Google
+kontakt.html             adres, e-maile klubu i opiekuna klubu, mapa Google
 polityka-prywatnosci.html
 404.html
 assets/css/style.css     motyw (tokeny kolorów w :root)
@@ -105,7 +105,7 @@ Wpisy wyświetlają się w kolejności z pliku; przy Silent Keys dopisywane jest
 ## Kontakt
 
 Strona nie ma formularza kontaktowego (usunięty 14.10.2026 — wcześniej przygotowana integracja Web3Forms jest w historii gita, commit `0202b17`).
-Na stronie **Kontakt** są dane: adres siedziby, spotkania, QRG, QSL, mapa Google oraz e-maile — klubu **sp3pld (małpa) vp.pl** i prezesa (Czesław SP3IBM, sp3ibm (małpa) vp.pl). E-mail klubu jest też w stopce (`assets/js/components.js`) i w polityce prywatności.
+Na stronie **Kontakt** są dane: adres siedziby, spotkania, QRG, QSL, mapa Google oraz e-maile — klubu **sp3pld (małpa) vp.pl** i opiekuna klubu (Czesław SP3IBM, sp3ibm (małpa) vp.pl). E-mail klubu jest też w stopce (`assets/js/components.js`) i w polityce prywatności.
 
 **E-maile są ukryte przed robotami zbierającymi adresy:** w HTML nie ma pełnego adresu ani znaku „@”, tylko np.
 `<a data-u="sp3pld" data-d="vp.pl">sp3pld (małpa) vp.pl</a>` — skrypt w `main.js` składa z tego klikalny link `mailto:`.
